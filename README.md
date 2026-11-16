@@ -1,10 +1,6 @@
 <h1>Overview</h1>
 
-EternalRomance is a critical Windows remote code execution exploit created by the NSA and was leaked by The Shadow Brokers in 2017. This exploit targets a type confusion vulnerability (CVE-2017-0143) in the SMBv1 protocol. 
-
-Let's take a look at the machine and find the flag. 
-
-<img width="256" height="256" alt="nsa" src="https://github.com/user-attachments/assets/479d9c0e-74d7-469d-9ce0-f819fbcb3c73" />
+EternalRomance is a critical Windows remote code execution exploit created by the NSA. This exploit targets a type confusion vulnerability (CVE-2017-0143) in the SMBv1 protocol. 
 
 <h1>Proof of Concept</h1>
 
