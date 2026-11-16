@@ -1,6 +1,10 @@
+## Disclaimer
+For educational purposes only. Conducted in an isolated, authorized lab.
+Do not test systems you do not own or have explicit written permission to test.
+
 <h1>Overview</h1>
 
-EternalRomance is a critical Windows remote code execution exploit created by the NSA. This exploit targets a type confusion vulnerability (CVE-2017-0143) in the SMBv1 protocol. 
+EternalRomance is an RCE (Remote Code Execution) exploit against the legacy SMBv1 protocol, patched by Microsoft in bulletin MS17-070. It abuses a type of confusion between WriteAndX and Transaction requests, paired with an SMB info-disclosure bug. 
 
 <h1>Proof of Concept</h1>
 
@@ -12,7 +16,7 @@ I found the Windows machine was on Windows Server 2016 Standard 6.3 which prompt
 
 <img width="1494" height="906" alt="1 Scan IP for open ports" src="https://github.com/user-attachments/assets/67afbf1b-6c00-44e0-a3e7-c8d7b860d196" />
 
-I opened up MSFconsole and typed **"search eternal."** The right one to choose is 10: **exploit/windows/smb/ms17_010_psexec**
+I opened up MSFconsole and typed **"search eternal."** The right one to choose is 0: **exploit/windows/smb/ms17_010_psexec**
 
 <img width="1461" height="902" alt="2 Search eternal and select 0" src="https://github.com/user-attachments/assets/6e9165d1-5def-41e5-823f-c498cc7f7a74" />
 
